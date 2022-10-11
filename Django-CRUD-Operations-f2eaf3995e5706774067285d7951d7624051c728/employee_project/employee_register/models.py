@@ -12,5 +12,7 @@ class Employee(models.Model):
     fullname = models.CharField(max_length=100)
     emp_code = models.CharField(max_length=3)
     mobile= models.CharField(max_length=15)
+    team = model.CharField(max_length=30)
+    department = model.CharField(max_length=40)
     position= models.ForeignKey(Position,on_delete=models.CASCADE)
     
